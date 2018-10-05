@@ -6,12 +6,14 @@ public class Runner {
         Student[] students = new Student[5];
         String[] first = {"Elsie","Zaniyah","Isabell","Bennett","Ahmed" };
         String[] last = {"Mccormick","Chandler","Walsh","Dixon","Bob"};
-        double[] grade = {3,2,3,4,3,2.5};
+
         for(int i = 0;i<5;i++)
         {
-            students[i] = new Student(grade[i],first[i],last[i]);
+            students[i] = new Student((Math.random()*5),first[i],last[(int)(Math.random()*4)]);
+
         }
         Classroom classroom = new Classroom(students,teach);
+        System.out.println(classroom.classAverage());
         classroom.printClass();
     }
 

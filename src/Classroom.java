@@ -12,7 +12,7 @@ public class Classroom {
     }
 
     public double classAverage(){
-        int num = 0;
+        double num = 0;
         for(int i = 0;i<students.length;i++){
             num+=students[i].getGPA();
         }
