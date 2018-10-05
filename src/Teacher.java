@@ -1,4 +1,5 @@
 public class Teacher extends Person {
+
     private String subject;
     private String title;
 
@@ -12,14 +13,19 @@ public class Teacher extends Person {
 
         return this.firstName;
     }
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
     public String getFamilyName()
     {
         return this.familyName;
     }
-    public String getSubject()
-    {
-        return this.subject;
-    }
+
     public String toString()
     {
         return this.title + familyName;

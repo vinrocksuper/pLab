@@ -19,7 +19,7 @@ public Student(double GPA, String firstName, String familyName){
         return(this.familyName);
     }
     public String toString(){
-    return(familyName + ", " + firstName);
+    return(familyName + ", " + firstName + "\n");
     }
 
 }

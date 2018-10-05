@@ -1,21 +1,25 @@
-public class Classroom {
-    Person[] students;
-    Person teacher;
+/**public class Classroom {
+    private Student[] students;
+    private Teacher teacher;
 
-    public Classroom (Person[] students, Person teacher){
+    public Classroom (Student[] students, Teacher teacher){
         this.students = students;
         this.teacher = teacher;
     }
 
-    public getSubject(){
-        return teacher.getSubject();
+    public String getSubject()
+    {
+        return this.teacher.getSubject();
     }
 
-    public classAverage(){
+    public double classAverage(){
 
+
+        return ;
     }
 
-    public printClass(){
+    public  printClass(){
 
     }
 }
+**/
