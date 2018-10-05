@@ -11,11 +11,18 @@ public class Classroom {
         return this.teacher.getSubject();
     }
 
-    public classAverage(){
-        return students[0].familyName;
+    public double classAverage(){
+        int num = 0;
+        for(int i = 0;i<students.length;i++){
+            num+=students[i].getGPA();
+        }
+        return num/students.length;
     }
 
-    public printClass(){
-
+    public void printClass(){
+        System.out.println(this.teacher.getSubject() + " Teacher: " + this.teacher);
+        for(int i = 0;i<students.length;i++) {
+            System.out.println(students[i].firstName + " " + students[i].familyName);
+        }
     }
 }
