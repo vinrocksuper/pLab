@@ -5,7 +5,7 @@ public class Runner {
         String[] first = {"Elsie","Zaniyah","Isabell","Bennett","Ahmed" };
         String[] last = {"Mccormick","Chandler","Walsh","Dixon","Bob"};
 
-        Student stude = new Student((Math.random()*5),first[((int)(Math.random()*5))],last[(int)(Math.random()*5)]);
+        Student stude = new Student((Math.random()*5),first[((int)(Math.random()*5))],last[(int)(Math.random()*5)],(Math.random()*5),(Math.random()*5));
         return stude;
     }
 

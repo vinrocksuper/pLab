@@ -3,11 +3,11 @@ public class Student extends Person{
     private double MATHAVG;
     private double ELAAVG;
 
-public Student(double GPA, String firstName, String familyName){
+public Student(double GPA, String firstName, String familyName,double MATHAVG,double ELAAVG){
         super(firstName,familyName);
         this.GPA=GPA;
-        this.MATHAVG=MATHAVG;
-        this.ELAAVG=ELAAVG;
+        this.MATHAVG= MATHAVG;
+        this.ELAAVG= ELAAVG;
 
 
     }
