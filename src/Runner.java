@@ -1,15 +1,22 @@
 public class Runner {
-    public static void main(String[] args)
+    public static Student randomStudent()
     {
-        Teacher teach = new Teacher("Bob", "Dylan","Math","Mr.");
-     //   Person stude = new Student(89.99, "Dylan","Math");
-        Student[] students = new Student[5];
+
         String[] first = {"Elsie","Zaniyah","Isabell","Bennett","Ahmed" };
         String[] last = {"Mccormick","Chandler","Walsh","Dixon","Bob"};
 
+        Student stude = new Student((Math.random()*5),first[((int)(Math.random()*5))],last[(int)(Math.random()*5)]);
+        return stude;
+    }
+
+    public static void main(String[] args)
+    {
+        Teacher teach = new Teacher("Bob", "Dylan","Math","Mr.");
+
+        Student[] students = new Student[5];
         for(int i = 0;i<5;i++)
         {
-            students[i] = new Student((Math.random()*5),first[i],last[(int)(Math.random()*4)]);
+            students[i] = randomStudent();
 
         }
         Classroom classroom = new Classroom(students,teach);
